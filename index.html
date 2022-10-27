@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Item Lister</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style/header.css">
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/transition.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+      </head>
+    <body>
+      <header>
+        <nav class="nav-bar">
+            <h2 class="nav-bar-title">Item Lister</h2>
+            <input class="search-input" id="filter" type="text" placeholder="Search item...">
+        </nav>
+      </header>
+      <main data-aos="zoom-in">
+        <div class="wrapper" id="wrapper">
+          <div class="top-part">
+            <div class="title-div-top">
+              <h2 class="main-title" id="main-title">Add item</h2>
+            </div>
+            <form class="input-div" id="addForm">
+              <input class="item-input" id="item" type="text" placeholder="Type new item...">
+              <input type="submit" class="input-button" value="Submit">
+            </form>
+          </div>
+          <div class="bottom-part">
+            <div class="title-div-bot">
+              <h2 class="list-title" id="header-title">Items</h2>
+            </div>
+            <div class="list-div" id="content-list">
+              <ul class="list-group" id="items">
+                <li class="list-group-item" id="list-group-item">Milk<button class="delete-button" id="delete-button">X</button></li>
+                <li class="list-group-item" id="list-group-item">Apple<button class="delete-button" id="delete-button">X</button></li>
+                <li class="list-group-item" id="list-group-item">Banana<button class="delete-button" id="delete-button">X</button></li>
+              </ul>
+            </div>
+          </div> 
+        </div>
+      </main>
+      <script src="script/main.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>AOS.init({ 
+        duration: 2000,
+        once: false,
+        });</script>
+    </body>
+</html>
